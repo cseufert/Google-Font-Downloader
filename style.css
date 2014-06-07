@@ -1,0 +1,252 @@
+/*
+Basic Style for Urania Image Gallery
+
+Author: Mathias Beke
+Url: http://denbeke.be
+Date: September 2013
+*/
+
+
+@font-face {
+    /*
+    'Bad Script' font
+    Fount on Google: @import url(http://fonts.googleapis.com/css?family=Bad+Script);
+    */
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bad Script Regular'), local('BadScript-Regular'), url('./font/bad_script.woff') format('woff');
+}
+
+
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxuw_rQOTGi-AJs5XCWaKIhU.woff) format('woff');
+}
+
+
+
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1; /* #f2f2f2 */
+	font-family: 'Open Sans';
+}
+
+
+
+
+.page {
+	width: 990px;
+	margin: auto;
+}
+
+
+/* Home */
+
+#home div.home-album-image-container {
+	width: 270px;
+	height: 240px;
+	box-shadow: 0 0 1px rgba(0,0,0,0.3) inset;
+	transition: opacity 0.2s;
+	text-align: center;
+}
+
+#home li a:hover div.home-album-image-container {
+	opacity: 0.8;
+}
+
+#home div.home-album-title {
+	height: 30px;
+	box-sizing: border-box;
+	padding: 4px;
+}
+
+#home div.home-album-title h3 {
+	margin: 0;
+	font-size: 0.95em;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+#home div.home-album-image-container span {
+	font-size: 2em;
+	line-height: 240px;
+}
+
+#home li a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+#home li {
+	float: left;
+	margin: 25px;
+	padding: 0px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	//box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+
+#home li a {
+
+}
+
+#home li a:hover {
+}
+
+#home li h3 {
+}
+
+
+
+/* Album */
+
+#adminTitle,
+#homeTitle,
+#album h1 {
+	text-align: center;
+	/* font: normal bold 3em 'Bad Script', cursive; */
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 3em;
+	color: #333;
+	text-shadow: 0 0 2px #fff;
+	margin-bottom: 0;
+}
+
+#home ul,
+#album ul {
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	margin: auto;
+	list-style: none;
+}
+
+
+
+#album ul li {
+	float: left;
+	width: 270px;
+	height: 270px;
+	
+	margin: 25px;
+	padding: 0px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0;
+
+}
+
+th {
+	color: #6d6e6d;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+	color: #6e6e6e;
+	text-shadow: 0 0 3px #fff;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 0.9em;
+}
+
+footer a {
+	color: #6e6e6e;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #000;
+}
+
+
+
+
+/* Responsive part */
+@media screen and (max-width: 960px) {
+
+	.page {
+		width: 600px !important;
+		max-width: 600px;
+		text-align: center;
+		
+	}
+	h1 {
+		font-size: 2.5em !important;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.page {
+		width: 300px !important;
+		max-width: 300px;
+		text-align: center;	
+	}
+	h1 {
+		font-size: 2em !important;
+	}
+
+}
